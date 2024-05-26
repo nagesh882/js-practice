@@ -1,2 +1,2 @@
 # js-practice
-This repo of javascript practices
+This repo of javascript practice
