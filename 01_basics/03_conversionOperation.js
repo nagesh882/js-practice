@@ -74,4 +74,30 @@ num1 = num2 = num3 = 2 + 2
 
 let gameCounter = 100
 ++gameCounter;
-console.log(gameCounter);
+// console.log(gameCounter);
+
+
+// ****************** Prefix ******************
+
+// If used prefix, with operator before operand (for example, ++x), the increment operator increments and returns the value after incrementing
+
+let prefixFirstNumber = 101
+
+let prefixSecondNumber;
+prefixSecondNumber = ++prefixFirstNumber
+// console.log(`prefix second number: ${prefixSecondNumber} | prefix first number: ${prefixFirstNumber}`);
+
+// ****************** Postfix ******************
+
+// If used postfix, with operator after operand (for example, x++), the increment operator increments and returns the value before incrementing
+
+let postfixFirstNumber = 201
+
+let postfixSecondNumber;
+postfixSecondNumber = postfixFirstNumber++
+// console.log(`postfix second number: ${postfixSecondNumber} | postfix first number: ${postfixFirstNumber}`);
+
+
+
+// console.log(null); // value => null
+// console.log(undefined); // value => undefined
