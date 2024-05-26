@@ -101,3 +101,16 @@ postfixSecondNumber = postfixFirstNumber++
 
 // console.log(null); // value => null
 // console.log(undefined); // value => undefined
+
+
+
+
+/*
+
+//link for self study
+
+// 01: https://tc39.es/ecma262/2023/multipage/
+
+// 02: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Increment
+
+*/
