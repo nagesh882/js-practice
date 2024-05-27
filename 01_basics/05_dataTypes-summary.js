@@ -34,13 +34,43 @@ const myFunction = function(){
 }
 
 
-console.log(typeof score) // number
-console.log(typeof scoreValue) // number
-console.log(typeof isLoggedIn) // boolean
-console.log(typeof outsideTemp) // object
-console.log(typeof userEmail) // undefined
-console.log(typeof id) // symbol
-console.log(typeof bigNumber) // bigint
-console.log(typeof fruits) // object
-console.log(typeof myObj) // object
-console.log(typeof myFunction) // function/function object
+// console.log(typeof score) // number
+// console.log(typeof scoreValue) // number
+// console.log(typeof isLoggedIn) // boolean
+// console.log(typeof outsideTemp) // object
+// console.log(typeof userEmail) // undefined
+// console.log(typeof id) // symbol
+// console.log(typeof bigNumber) // bigint
+// console.log(typeof fruits) // object
+// console.log(typeof myObj) // object
+// console.log(typeof myFunction) // function/function object
+
+
+
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Type of memory in javascript: Stack (Primitive) and Heap (Non-Primitive)
+
+// stack memory used in primitive data types (stack provide copy of varible value) and heap used in non-primitive data types (heap provide the reference of memory(location) of variables orignal value)
+
+let myName = "Nagesh"
+
+let anotherName = myName
+anotherName = "Yash"
+
+console.log(myName);
+console.log(anotherName);
+
+
+let userOne = {
+    email: "user@google.com",
+    upiId: "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "yash@google.com"
+
+console.log(userOne.email)
+console.log(userTwo.email)
