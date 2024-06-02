@@ -37,5 +37,14 @@ JsUser.greetingTwo = function(){
     console.log(`Hello JS user, ${this.name}`)
 }
 
-console.log(JsUser.greeting())
-console.log(JsUser.greetingTwo())
+JsUser.greeting()
+JsUser.greetingTwo()
+
+// console.log(JsUser.greeting())
+// console.log(JsUser.greetingTwo())
+
+
+JsUser.myLaptopName = "ASUS TUF GAMING A15"
+console.log(JsUser);
+
+console.log(`My Laptop Name:- ${JsUser.myLaptopName}`);
