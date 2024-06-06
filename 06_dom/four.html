@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | Edit and Remove Element</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+
+    <ul class="languageNames">
+        <li>JavaScript</li>
+    </ul>
+
+</body>
+<script>
+
+    // Create New Element
+
+    function addLanguage(language) {
+        const li = document.createElement('li')
+        li.innerHTML = `${language}`
+        const languageNames = document.querySelector('.languageNames')
+        languageNames.appendChild(li)
+    }
+
+    addLanguage("Python")
+    addLanguage("TypeScript")
+
+    function addOptiLanguage(language) {
+        const li = document.createElement("li")
+        // const addText = document.createTextNode(language)
+        // li.appendChild(addText)
+        li.appendChild(document.createTextNode(language))
+        document.querySelector(".languageNames").appendChild(li)
+    }
+
+    addOptiLanguage("GoLang")
+
+
+    // Edit Element
+
+    function editThirdLanguage(language) {
+        const thirdLanguage = document.querySelector("li:nth-child(3)")
+        thirdLanguage.innerHTML = `${language}`
+    }
+
+    editThirdLanguage("Mojo")
+
+
+    function editSecondLanguage(language) {
+        const secondLanguage = document.querySelector("li:nth-child(2)")
+        const li = document.createElement("li")
+        li.textContent = "R Language"
+        secondLanguage.replaceWith(li)
+    }
+
+    editSecondLanguage("R Language")
+
+    function editFirstLanguage(language) {
+        const FirstLanguage = document.querySelector("li:first-child")
+        const li = document.createElement("li")
+        const addText = document.createTextNode(language)
+        li.appendChild(addText)
+        FirstLanguage.replaceWith(li)
+    }
+
+    editFirstLanguage("TypeScript")
+
+    // remove Element
+
+    function removeLanguage() {
+        const lastLanguage = document.querySelector("li:last-child")
+        lastLanguage.remove()
+    }
+
+    removeLanguage()
+
+</script>
+</html>
