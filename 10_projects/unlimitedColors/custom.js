@@ -1,3 +1,8 @@
+// Async based Project
+// setInterval and setTimeout
+
+
+
 const randomColor = function(){
     const hexValue = "0123456789ABCDEF"
     let color = "#"

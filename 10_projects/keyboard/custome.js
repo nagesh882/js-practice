@@ -1,3 +1,7 @@
+// Async based Project
+// setInterval and setTimeout
+
+
 const insert = document.getElementById("insert")
 
 
