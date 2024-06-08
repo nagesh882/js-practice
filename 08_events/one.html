@@ -19,5 +19,67 @@
    </div>
 </body>
 <script>
+    // document.getElementById("owl").onclick = function(){
+    //     alert("owl clicked")
+    // }
+
+    // attachEvent
+    // jQuery - on
+    // type, timeStamp, defaultprevented
+    // target, toElement, srcElement, currentTarget
+    // clientX, clientY, screenX, screenY
+    // altkey, ctrlkey, shiftkey, keyCode
+
+    // document.getElementById("owl").addEventListener("click", function(event){
+    //     // alert("owl ckicked again")
+    //     console.log(event);
+    // }, false)
+
+    // Bubling Event Mode
+    // document.getElementById("images").addEventListener("click", function(e){
+    //     console.log("clicked inside the ul")
+    // }, false)
+    
+    // document.getElementById("owl").addEventListener("click", function(e){
+    //     console.log("owl clicked")
+    //     e.stopPropagation()
+    // }, false)
+
+    // capturing mode
+    // document.getElementById("images").addEventListener("click", function(e){
+    //     console.log("clicked inside the ul")
+    // }, true)
+    
+    // document.getElementById("owl").addEventListener("click", function(e){
+    //     console.log("owl clicked")
+    // }, true)
+
+
+    // document.getElementById("images").addEventListener("click", function(e){
+    //     console.log("clicked inside the ul")
+    // }, false)
+    
+    // document.getElementById("owl").addEventListener("click", function(e){
+    //     console.log("owl clicked")
+    //     e.stopPropagation()
+    // }, false)
+
+
+    // document.getElementById("google").addEventListener("click", (e) => {
+    //     e.preventDefault();
+    //     e.stopPropagation();
+    //     console.log("Google clicked");
+    // }, false)
+
+    document.querySelector("#images").addEventListener("click", (event) => {
+        // console.log(event.target.parentNode);
+        console.log(event.target.tagName);
+        if (event.target.tagName === "IMG") {
+            let removeIt = event.target.parentNode
+            removeIt.remove()
+            
+        }
+    }, false)
+
 </script>
 </html>
