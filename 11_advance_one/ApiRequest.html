@@ -18,9 +18,17 @@
         if (xhr.readyState === 4) {
             const data = JSON.parse(this.responseText)
             console.log(data.info);
+
+            // const user = data.results[0].name.first
+            // const h1 = document.querySelector("h1")
+            // const heading = document.createElement("h1")
+            // const addText = document.createTextNode(`Name: ${user}`)
+            // heading.appendChild(addText)
+            // h1.appendChild(heading)
         }
     }
     xhr.send()
+
 </script>
 
 </html>
